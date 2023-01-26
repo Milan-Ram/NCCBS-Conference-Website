@@ -10,20 +10,35 @@
     text-decoration: none;
     font-family: 'Poppins', sans-serif;
 }
-a{
+
+a {
     color: unset;
 }
+
+img {
+    max-width: 100%;
+}
+
 body {
     font-size: 62.5%;
 }
-.d-flex{
+
+.btn {
+    padding: 0.6rem 1.2rem;
+    font-weight: 500;
+    font-size: 01rem;
+    border-radius: 10rem;
+    cursor: pointer;
+}
+
+.d-flex {
     display: flex;
     align-items: center;
 }
 
-header {
+/* header {
     background-color: lightblue;
-}
+} */
 
 .header-details {
     align-items: flex-start;
@@ -58,21 +73,108 @@ header {
 .address {
     font-size: 1.1rem;
 }
-.contacts-container{
+
+.contacts-container {
     flex-direction: column;
     align-items: flex-end;
     gap: 0.8rem;
-    margin: 1rem 2rem ;
+    margin: 1rem 2rem;
 }
-.contacts{
+
+.contacts {
     gap: 1.5rem;
 }
-.contacts span{
+
+.contacts span {
     gap: 0.2rem;
     font-size: 1.12rem;
 }
-.social-media-links{
+
+.social-media-links {
     font-size: 1.7rem;
     gap: 1rem;
     cursor: pointer;
+}
+
+/*-- header  --------------------------------------------- */
+.header {
+    justify-content: space-between;
+    padding: 0 5rem;
+    height: 4rem;
+    background-color: #359381;
+}
+
+.navbar {
+    gap: 1rem;
+}
+
+.navbar li a {
+    color: #fff;
+    font-size: 1.1rem;
+    padding: 0.4rem 0.8rem;
+    border-radius: 10rem;
+}
+
+.nav-links:hover a, .nav-links .active {
+    color: #359381 !important;
+    background-color: #fff;
+}
+
+.register-btn {
+    background-color: #fff;
+}
+
+.register-btn:hover {
+    transform: scale(1.01);
+}
+
+/*-- main content -----------------------------------------------------  */
+.scroll-image {
+    object-fit: cover;
+}
+
+/*-- footer -----------------------------------------------------------  */
+.footer-wrapper {
+    position: absolute;
+    display: flex;
+    gap: 2rem;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    height: 350px;
+    padding: 3rem 5rem;
+    background-color: #359381;
+}
+
+.footer-section {
+
+    align-items: flex-start;
+    flex-direction: column;
+    flex-basis: 25%;
+    gap: 0.5rem;
+}
+
+.footer-links-section {
+    flex-basis: 13%;
+}
+
+.footer-section .title {
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.89);
+    width: fit-content;
+    border-bottom: 3px solid #fff;
+    margin-bottom: 1rem;
+}
+
+.footer-section span {
+    font-size: 1rem;
+    color: rgba(255, 255, 255, 0.89);
+}
+
+.footer-highlight {
+    font-weight: 500;
+    font-size: 1.15rem !important;
 }
