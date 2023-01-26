@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+
+* {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    list-style-type: none;
+    border: 0;
+    outline: none;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+}
+a{
+    color: unset;
+}
+body {
+    font-size: 62.5%;
+}
+.d-flex{
+    display: flex;
+    align-items: center;
+}
+
+header {
+    background-color: lightblue;
+}
+
+.header-details {
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 1rem 3rem;
+}
+
+.logo-1 {
+    width: 7.5rem;
+}
+
+.logo-1-container {
+    margin: 0 1rem;
+    border-right: 1px solid black;
+}
+
+.logo-2 {
+    width: 6rem;
+}
+
+.brand-name {
+    align-items: flex-start;
+    flex-direction: column;
+    margin: 0 1rem;
+}
+
+.department-name {
+    font-size: 1.7rem;
+    font-weight: 500;
+}
+
+.address {
+    font-size: 1.1rem;
+}
+.contacts-container{
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 0.8rem;
+    margin: 1rem 2rem ;
+}
+.contacts{
+    gap: 1.5rem;
+}
+.contacts span{
+    gap: 0.2rem;
+    font-size: 1.12rem;
+}
+.social-media-links{
+    font-size: 1.7rem;
+    gap: 1rem;
+    cursor: pointer;
+}
