@@ -21,6 +21,7 @@ img {
 
 body {
     font-size: 62.5%;
+    /* min-height: 100vh; */
 }
 
 .btn {
@@ -129,20 +130,76 @@ body {
 }
 
 /*-- main content -----------------------------------------------------  */
+
+main section{
+    min-height: 100vh;
+    padding: 1rem 5rem;
+}
 .scroll-image {
     object-fit: cover;
 }
-
+.section-title{
+    font-size: 1.7rem;
+    color: #308474;
+    margin-bottom: 1rem;
+}
+.about-us-content{
+    font-size: 1rem;
+    word-spacing: 1.5px;
+    line-height: 1.9rem;
+}
+.about-us-content p{
+    margin: 1.4rem 0 ;
+}
+.about-us-section .register-btn{
+    background-color: #359381;
+    color: #fff;
+    margin: 1rem 0;
+    border-radius: 0;
+    padding: 1rem 2rem ;
+}
+.upcoming-events-container{
+margin-bottom: 3rem 0;
+}
+.upcoming-events-container h2{
+    margin: 2rem 0;
+    font-size: 1.4rem;
+    border-bottom: 1px solid black;
+    padding-bottom: 1rem;
+}
+.upcoming-event{
+    background-color: #fff;
+    width: 60%;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    margin: 1rem 0;
+    border: 2px solid #359381;
+    border-radius: 1rem;
+}
+.upcoming-event .event-title{
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+.upcoming-event .event-date{
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+.upcoming-event .know-more-link{
+    font-size: 1rem;
+    font-weight: 600;
+}
+.upcoming-event .know-more-link:hover{
+    border-bottom: 2px solid black;
+}
 /*-- footer -----------------------------------------------------------  */
 .footer-wrapper {
     position: absolute;
+    left: 0;
     display: flex;
     gap: 2rem;
     align-items: flex-start;
     justify-content: space-between;
     width: 100%;
-    left: 0;
-    bottom: 0;
     height: 350px;
     padding: 3rem 5rem;
     background-color: #359381;
