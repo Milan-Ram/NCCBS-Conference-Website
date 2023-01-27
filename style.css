@@ -15,12 +15,13 @@ a {
     color: unset;
 }
 
-img {
-    max-width: 100%;
-}
+/* img {
+    max-width: 100vw;
+} */
 
 body {
     font-size: 42.5%;
+    overflow-x: hidden;
 }
 
 .btn {
@@ -35,10 +36,6 @@ body {
     display: flex;
     align-items: center;
 }
-
-/* header {
-    background-color: lightblue;
-} */
 
 .header-details {
     align-items: flex-start;
@@ -90,6 +87,17 @@ body {
     font-size: 1.12rem;
 }
 
+.mobile-menu {
+    position: absolute;
+    right: 6rem;
+}
+
+.mobile-menu-icon {
+    display: none;
+    font-size: 2.1rem;
+    cursor: pointer;
+}
+
 .social-media-links {
     font-size: 1.7rem;
     gap: 1rem;
@@ -120,33 +128,44 @@ body {
     border-radius: 10rem;
     gap: 7px;
 }
-.nav-links:hover > a, .nav-links .active {
+
+.nav-links:hover>a, .nav-links .active {
     color: #359381 !important;
     background-color: #fff;
 }
+
+#mobile-close-icon {
+    display: none;
+    font-size: 2rem;
+    font-weight: 600;
+    color: #fff;
+    margin: 1.5rem;
+}
+
 /*===================================== drop-down menu ==============================  */
 .drop-down-icon {
     font-size: 0.9rem;
 }
-.drop-down-menu{
+
+.drop-down-menu {
     display: none;
 }
+
 .nav-links:hover .drop-down-menu {
-   display: block;
+    display: block;
     position: absolute;
     left: 0.7rem;
     width: max-content;
     padding: 2rem;
     color: #fff;
     background-color: #359382da;
+    z-index: 99999;
 }
 
 .drop-down-nav-link {
     margin-top: 0.6rem;
     font-size: 1.1rem;
 }
-
-
 
 .header .register-btn {
     position: absolute;
@@ -165,14 +184,50 @@ main section {
     padding: 1rem 5rem;
 }
 
+.main-Container {
+    overflow-x: hidden;
+}
+
+/*=============================================== image scroll =====================  */
 .scroll-image {
     object-fit: cover;
 }
 
+.image-scroll-container {
+    position: relative;
+    width: 100%;
+}
+
+.images-container {
+    transition: 0.02s;
+    z-index: 9999;
+}
+
+.images-container img {
+    width: 100vw;
+}
+
+.image-scroll-arrow {
+    position: absolute;
+    color: #fff;
+    font-size: 3rem;
+    cursor: pointer;
+    z-index: 999999;
+}
+
+#image-scroll-arrow-left {
+    left: 0;
+}
+
+#image-scroll-arrow-right {
+    right: 0;
+}
+
+/*=============================================== sections ========================= */
 .section-title {
     font-size: 1.7rem;
     color: #308474;
-    margin-bottom: 1rem;
+    margin: 1rem 0;
 }
 
 .about-us-content {
@@ -242,7 +297,6 @@ main section {
     align-items: flex-start;
     justify-content: space-between;
     width: 100%;
-    height: 350px;
     padding: 3rem 5rem;
     background-color: #359381;
 }
@@ -276,4 +330,172 @@ main section {
 .footer-highlight {
     font-weight: 500;
     font-size: 1.15rem !important;
+}
+
+/*================================================ medai queries =================== */
+@media screen and (min-width:1500px) {
+    :root {
+        font-size: 1.3rem;
+    }
+
+    body {
+        height: fit-content;
+    }
+
+    .footer-wrapper {
+        height: 21rem;
+    }
+}
+
+@media screen and (max-width:1440px) {
+    :root {
+        font-size: 0.85rem;
+    }
+}
+
+@media screen and (max-width:1200px) {
+    :root {
+        font-size: 0.72rem;
+    }
+}
+
+@media screen and (max-width:1000px) {
+
+
+    .header-details {
+        flex-direction: column;
+    }
+
+    .footer-wrapper {
+        flex-direction: column;
+    }
+
+    .header {
+        display: none;
+        position: absolute;
+        right: 0px;
+        top: 0px;
+        padding: 3rem 4rem;
+        height: 100vh;
+        align-items: flex-start;
+        width: fit-content;
+        z-index: 9999999;
+    }
+
+    .mobile-menu-icon {
+        display: block;
+    }
+
+    .navbar {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    #mobile-close-icon {
+        display: block;
+    }
+
+    .nav-links:hover .drop-down-menu {
+        padding: 1rem;
+        background-color: #359381;
+        position: absolute;
+        left: -115px;
+        top: 0px;
+        border: 1px solid #fff;
+    }
+
+    .drop-down-nav-link {
+        margin-top: 0.6rem;
+        font-size: 1.1rem;
+    }
+
+    .header .register-btn {
+        top: 260px;
+        right: 4rem;
+    }
+
+    .upcoming-event {
+        border: 1px solid #359381;
+    }
+
+    .images-container img {
+        height: 300px;
+    }
+}
+
+@media screen and (max-width:500px) {
+
+    .logos-container {
+        flex-direction: column;
+    }
+
+    .logo-1 {
+        width: 5rem;
+        margin-right: 0.5rem;
+    }
+
+    .logo-2 {
+        width: 4rem;
+        margin-left: 0.4rem;
+    }
+
+    .brand-name {
+        align-items: center;
+    }
+
+    .department-name {
+        font-size: 1.5rem;
+        margin-top: 1rem;
+    }
+
+    .address {
+        font-size: 1.2rem;
+        font-weight: 500;
+    }
+    .mobile-menu-icon {
+        position: absolute;
+        right: -4rem;
+    }
+
+    .upcoming-event {
+        width: 100%;
+    }
+
+    .footer-map iframe {
+        width: 110%;
+    }
+
+    .contacts-container {
+        margin: 1rem auto;
+    }
+
+    .contacts {
+        flex-direction: column;
+        align-items: center;
+        gap: 0.5rem;
+    }
+
+
+}
+
+@media screen and (max-width:420px) {
+
+    .department-name {
+        font-size: 1.3rem;
+        font-weight: 700;
+        margin-top: 1rem;
+    }
+
+    .mobile-menu-icon {
+        position: absolute;
+        right: -5rem;
+    }
+    .header-details {
+        align-items: center;
+        padding: 1rem 0rem;
+    }
+    
+    main section {
+        padding: 1rem 2rem;
+    }
 }
