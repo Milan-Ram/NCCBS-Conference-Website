@@ -45,8 +45,17 @@
         <nav>
           <ul class="navbar d-flex">
             <li class="nav-links"><a class="active" href="#">Home</a></li>
-            <li class="nav-links"><a href="#about-us-id">About</a></li>
-            <li class="nav-links"><a href="#">Committee</a></li>
+            <li class="nav-links"><a class="d-flex" href="#">
+                               About
+                                <ion-icon class="drop-down-icon" name="chevron-down-outline"></ion-icon>
+                              </a>
+                            <div class="drop-down-menu">
+                              <ul>
+                                <li class="drop-down-nav-link"><a href="#about-us-id">About Us</a></li>
+                                <li class="drop-down-nav-link"><a href="#">About NCCBS</a></li>
+                              </ul>
+                            </div></li>
+            <li class="nav-links"><a class="d-flex"  href="#">Committee <ion-icon class="drop-down-icon" name="chevron-down-outline"></ion-icon></a></li>
             <li class="nav-links"><a href="#">Programme</a></li>
             <li class="nav-links"><a href="#">Contact</a></li>
           </ul>

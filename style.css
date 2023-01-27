@@ -47,7 +47,7 @@ body {
 }
 
 .logo-1 {
-    width: 7.5rem;
+    width: 6rem;
 }
 
 .logo-1-container {
@@ -56,7 +56,7 @@ body {
 }
 
 .logo-2 {
-    width: 6rem;
+    width: 5rem;
 }
 
 .brand-name {
@@ -98,29 +98,59 @@ body {
 
 /*-- header  --------------------------------------------- */
 .header {
-    justify-content: space-between;
+    justify-content: center;
     padding: 0 5rem;
-    height: 4rem;
+    height: 4.5rem;
     background-color: #359381;
+    position: relative;
 }
 
 .navbar {
     gap: 1rem;
 }
 
-.navbar li a {
+.navbar li {
+    position: relative;
+}
+
+.navbar>li>a {
     color: #fff;
     font-size: 1.1rem;
     padding: 0.4rem 0.8rem;
     border-radius: 10rem;
+    gap: 7px;
 }
-
-.nav-links:hover a, .nav-links .active {
+.nav-links:hover > a, .nav-links .active {
     color: #359381 !important;
     background-color: #fff;
 }
+/*===================================== drop-down menu ==============================  */
+.drop-down-icon {
+    font-size: 0.9rem;
+}
+.drop-down-menu{
+    display: none;
+}
+.nav-links:hover .drop-down-menu {
+   display: block;
+    position: absolute;
+    left: 0.7rem;
+    width: max-content;
+    padding: 2rem;
+    color: #fff;
+    background-color: #359382da;
+}
 
-.register-btn {
+.drop-down-nav-link {
+    margin-top: 0.6rem;
+    font-size: 1.1rem;
+}
+
+
+
+.header .register-btn {
+    position: absolute;
+    right: 5rem;
     background-color: #fff;
 }
 
@@ -130,43 +160,51 @@ body {
 
 /*-- main content -----------------------------------------------------  */
 
-main section{
+main section {
     min-height: 100vh;
     padding: 1rem 5rem;
 }
+
 .scroll-image {
     object-fit: cover;
 }
-.section-title{
+
+.section-title {
     font-size: 1.7rem;
     color: #308474;
     margin-bottom: 1rem;
 }
-.about-us-content{
+
+.about-us-content {
     font-size: 1rem;
     word-spacing: 1.5px;
     line-height: 1.9rem;
 }
-.about-us-content p{
-    margin: 1.4rem 0 ;
+
+.about-us-content p {
+    margin: 1.4rem 0;
 }
-.about-us-section .register-btn{
+
+.about-us-section .register-btn {
     background-color: #359381;
     color: #fff;
     margin: 1rem 0;
     border-radius: 0;
-    padding: 1rem 2rem ;
+    padding: 1rem 2rem;
 }
-.upcoming-events-container{
-margin-bottom: 3rem 0;
+
+.upcoming-events-container {
+    margin-bottom: 3rem 0;
 }
-.upcoming-events-container h2{
+
+.upcoming-events-container h2 {
     margin: 2rem 0;
     font-size: 1.4rem;
     border-bottom: 1px solid black;
     padding-bottom: 1rem;
 }
-.upcoming-event{
+
+.upcoming-event {
     background-color: #fff;
     width: 60%;
     justify-content: space-between;
@@ -175,21 +213,26 @@ margin-bottom: 3rem 0;
     border: 2px solid #359381;
     border-radius: 1rem;
 }
-.upcoming-event .event-title{
+
+.upcoming-event .event-title {
     font-size: 1.2rem;
     font-weight: 700;
 }
-.upcoming-event .event-date{
+
+.upcoming-event .event-date {
     font-size: 0.9rem;
     font-weight: 500;
 }
-.upcoming-event .know-more-link{
+
+.upcoming-event .know-more-link {
     font-size: 1rem;
     font-weight: 600;
 }
-.upcoming-event .know-more-link:hover{
+
+.upcoming-event .know-more-link:hover {
     border-bottom: 2px solid black;
 }
+
 /*-- footer -----------------------------------------------------------  */
 .footer-wrapper {
     position: absolute;
