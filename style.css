@@ -230,17 +230,17 @@ main section {
     margin: 1rem 0;
 }
 
-.about-us-content {
+.about-us-content, .about-nccbs-content {
     font-size: 1rem;
     word-spacing: 1.5px;
     line-height: 1.9rem;
 }
 
-.about-us-content p {
+.about-us-content p, .about-nccbs-content p {
     margin: 1.4rem 0;
 }
 
-.about-us-section .register-btn {
+.about-us-section .register-btn, .about-nccbs-content.register-btn {
     background-color: #359381;
     color: #fff;
     margin: 1rem 0;
@@ -286,6 +286,30 @@ main section {
 
 .upcoming-event .know-more-link:hover {
     border-bottom: 2px solid black;
+}
+
+/*============================================ committee ==================  */
+.committee-content .sub-heading{
+    color: #499e8e;
+    font-size: 1.1rem;
+    padding: 0.2rem;
+    border-bottom: 2px solid #499e8e;
+    width: fit-content;
+    font-weight: 600;
+}
+.committee-content ul{
+    margin: 2rem 1rem;
+}
+.committee-content ul li {
+    list-style-type: disc;
+    margin: 0.7rem 0;
+    padding: 0.3rem 0;
+    border-bottom: 1px solid #308475a2;
+}
+
+.committee-content li span {
+    font-weight: 600;
+    font-size: 1.05rem;
 }
 
 /*-- footer -----------------------------------------------------------  */
@@ -375,8 +399,8 @@ main section {
         position: absolute;
         right: 0px;
         top: 0px;
-        padding: 3rem 4rem;
-        height: 50vh;
+        padding: 5rem 4rem;
+        height: 60vh;
         align-items: flex-start;
         width: fit-content;
         z-index: 9999999;
@@ -410,7 +434,7 @@ main section {
     }
 
     .header .register-btn {
-        top: 260px;
+        top: 50vh;
         right: 4rem;
     }
 
@@ -452,6 +476,7 @@ main section {
         font-size: 1.2rem;
         font-weight: 500;
     }
+
     .mobile-menu-icon {
         position: absolute;
         right: -4rem;
@@ -460,7 +485,9 @@ main section {
     .upcoming-event {
         width: 100%;
     }
-
+    .committee-content li span{
+        display: block;
+    }
     .footer-map iframe {
         width: 110%;
     }
@@ -490,12 +517,16 @@ main section {
         position: absolute;
         right: -5rem;
     }
+
     .header-details {
         align-items: center;
         padding: 1rem 0rem;
     }
-    
+
     main section {
         padding: 1rem 2rem;
+    }
+    .footer-wrapper {
+        padding: 3rem 4rem 3rem 2rem;
     }
 }
