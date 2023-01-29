@@ -473,13 +473,13 @@ select option{
 
 @media screen and (max-width:1440px) {
     :root {
-        font-size: 0.85rem;
+        font-size: 0.8rem;
     }
 }
 
 @media screen and (max-width:1200px) {
     :root {
-        font-size: 0.72rem;
+        font-size: 0.62rem;
     }
 }
 
@@ -500,7 +500,7 @@ select option{
         right: 0px;
         top: 0px;
         padding: 5rem 4rem;
-        height: 60vh;
+        height: 70vh;
         align-items: flex-start;
         width: fit-content;
         z-index: 9999999;
@@ -534,7 +534,7 @@ select option{
     }
 
     .header .register-btn {
-        top: 50vh;
+        top: 58vh;
         right: 4rem;
     }
 
@@ -544,6 +544,12 @@ select option{
 
     .images-container img {
         height: 300px;
+    }
+    .about-nccbs-section{
+        flex-direction: column;
+    }
+    .about-section-side-menu{
+        padding: 2rem 6rem 2rem 2rem;
     }
 }
 
@@ -604,7 +610,6 @@ select option{
         gap: 0.5rem;
     }
 
-
 }
 
 @media screen and (max-width:420px) {
@@ -614,7 +619,9 @@ select option{
         font-weight: 700;
         margin-top: 1rem;
     }
-
+.address{
+    font-size: 1rem;
+}
     .mobile-menu-icon {
         position: absolute;
         right: -5rem;
