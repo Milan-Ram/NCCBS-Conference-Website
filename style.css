@@ -586,6 +586,9 @@ section .register-btn {
     .contact-phone{
         display: block;
     }
+    .programme-section li{
+        font-size: 1.1rem;
+    }
 
 }
 
