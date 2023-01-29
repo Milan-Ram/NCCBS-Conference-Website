@@ -3,7 +3,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Department Of ChE ,VSSUT</title>
+    <title>Home : Department Of ChE ,VSSUT</title>
+    <link rel="icon" type="image/x-icon" href="/images/logo.png">
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
@@ -192,6 +193,49 @@
       nomodule
       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
     ></script>
-    <script src="./App.js"></script>
+    <script >
+      
+
+      const left_arrow = document.getElementById('image-scroll-arrow-left');
+      const right_arrow = document.getElementById('image-scroll-arrow-right');
+      const image_container =document.getElementById('scroll-images-container');
+      let num=0;
+      const slide_show = ()=>{
+        if(num==0){
+        image_container.style.transform = "translateX(" + (-100) + "vw)";
+        num +=1;
+      }
+      else{
+          image_container.style.transform = "translateX(" + (0) + "px)";
+          num -=1;
+        }
+      }
+      
+      left_arrow.addEventListener('click',slide_show)
+      right_arrow.addEventListener('click',()=>{
+       if(num==1){
+         image_container.style.transform = "translateX(" + (0) + "vw)";
+        num -=1;
+      }
+      else{
+        image_container.style.transform = "translateX(" + (-100) + "vw)";
+        num +=1;
+
+       };})
+      setInterval(slide_show, 3000);
+
+      // =============================== Mobile Menu ===================== //
+        const menu_icon =document.getElementById('mobile-menu-icon');
+        const close_icon =document.getElementById('mobile-close-icon');
+        const header =document.querySelector('.header');
+
+        menu_icon.addEventListener('click',()=>{
+          header.style.display ="block";
+        });
+        close_icon.addEventListener('click',()=>{
+          header.style.display ="none";
+        })
+   
+    </script>
   </body>
 </html>

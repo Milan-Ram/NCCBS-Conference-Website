@@ -6,7 +6,7 @@
       let num=0;
       left_arrow.addEventListener('click',()=>{
         if(num==0){
-        image_container.style.transform = "translateX(" + (-98.7) + "vw)";
+        image_container.style.transform = "translateX(" + (-100) + "vw)";
         num +=1;
       }
       else{
@@ -24,6 +24,13 @@
         num +=1;
 
        }
+       function auto_slide(){
+        alert('hi');
+        image_container.style.transform = "translateX(" + (-100) + "vw)";
+       }
+       setTimeout(auto_slide, 2000)
+
+      // =============================== Mobile Menu ===================== //
 
         })
         const menu_icon =document.getElementById('mobile-menu-icon');
