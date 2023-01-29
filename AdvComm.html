@@ -12,93 +12,63 @@
     <header>
       <div class="header-details d-flex">
         <div class="logos-container d-flex">
-          <div class="d-flex">
-            <div class="logo-1-container">
-              <img class="logo logo-1" src="./Images/vssut-logo.png" alt="" />
-            </div>
-            <div class="logo-dividing-div"></div>
-            <div class="logo-2-container">
-              <img class="logo logo-2" src="./Images/branch-logo.png" alt="" />
-            </div>
+          <div class="d-flex"><div class="logo-1-container">
+            <img class="logo logo-1" src="./Images/vssut-logo.png" alt="" />
+          </div>
+          <div class="logo-dividing-div"></div>
+          <div class="logo-2-container">
+            <img class="logo logo-2" src="./Images/branch-logo.png" alt="" />
+          </div>
           </div>
           <div class="brand-name d-flex">
             <span class="department-name"
               >Department Of Chemical Engineering</span
             >
-            <span class="address">VSSUT , Burla</span>
+            <span class="address">Veer Surenra Sai University of Technology , Burla</span>
           </div>
-          <div class="mobile-menu">
-            <ion-icon
-              id="mobile-menu-icon"
-              class="mobile-menu-icon"
-              name="menu-outline"
-            ></ion-icon>
-          </div>
+          <div class="mobile-menu"><ion-icon id='mobile-menu-icon' class="mobile-menu-icon" name="menu-outline"></ion-icon></div>  
         </div>
         <!-- ---------------------------------------------------------------------------- -->
         <div class="contacts-container d-flex">
           <div class="contacts d-flex">
-            <span class="phone-number">+91 8837387899</span>
+            <span class="phone-number">+91 8249268068</span>
             <span class="email d-flex"
               ><ion-icon name="mail-outline"></ion-icon
-              ><a href="#">vssut.chemicalEngineering.edu</a></span
+              ><a href="mailto: head_chemical@vssut.ac.in ">head_chemical@vssut.ac.in</a></span
             >
           </div>
           <!-- <div class="social-media-links d-flex">
-              <ion-icon name="logo-facebook"></ion-icon>
-              <ion-icon name="logo-instagram"></ion-icon>
-              <ion-icon name="logo-linkedin"></ion-icon>
-            </div> -->
+            <ion-icon name="logo-facebook"></ion-icon>
+            <ion-icon name="logo-instagram"></ion-icon>
+            <ion-icon name="logo-linkedin"></ion-icon>
+          </div> -->
+          
         </div>
       </div>
       <!-- ----------------------------------------------------------------------------- -->
       <div class="header d-flex">
         <nav>
-          <span
-            ><ion-icon id="mobile-close-icon" name="close-outline"></ion-icon
-          ></span>
+          <span><ion-icon id='mobile-close-icon'  name="close-outline"></ion-icon></span>
           <ul class="navbar d-flex">
-            <li class="nav-links"><a class="active" href="#">Home</a></li>
+            <li class="nav-links"><a class="active" href="./index.html">Home</a></li>
+            <li class="nav-links"><a class="d-flex" href="#">
+                               About
+                              </a>
+                           </li>
             <li class="nav-links">
-              <a class="d-flex" href="#">
-                About
-                <ion-icon
-                  class="drop-down-icon"
-                  name="chevron-down-outline"
-                ></ion-icon>
-              </a>
-              <div class="drop-down-menu">
-                <ul>
-                  <li class="drop-down-nav-link">
-                    <a href="./index.html">About Us</a>
-                  </li>
-                  <li class="drop-down-nav-link">
-                    <a href="./AboutNCCBS.html">About NCCBS</a>
-                  </li>
-                </ul>
-              </div>
-            </li>
-            <li class="nav-links">
-              <a class="d-flex" href="#"
-                >Committee
-                <ion-icon
-                  class="drop-down-icon"
-                  name="chevron-down-outline"
-                ></ion-icon
-              ></a>
-              <div class="drop-down-menu">
-                <ul>
-                  <li class="drop-down-nav-link">
-                    <a href="./OrgComm.html">Organnizing Committe</a>
-                  </li>
-                  <li class="drop-down-nav-link">
-                    <a href="./AdvComm.html">Advisory Committe</a>
-                  </li>
-                </ul>
-              </div>
-            </li>
-            <li class="nav-links"><a href="#">Programme</a></li>
-            <li class="nav-links"><a href="#">Contact</a></li>
+              <a class="d-flex"  href="#">Committee
+                 <ion-icon class="drop-down-icon" name="chevron-down-outline"></ion-icon></a>
+                 <div class="drop-down-menu">
+                  <ul>
+                    <li class="drop-down-nav-link"><a href="./AdvComm.html">Advisory Committe</a></li>
+                    <li class="drop-down-nav-link"><a href="./OrgComm.html">Organnizing Committe</a></li>
+                  </ul>
+                </div>
+                </li>
+            <li class="nav-links"><a href="./AboutNCCBS.html">NCCBS</a></li>
+
+            <li class="nav-links"><a href="./program.html">Programme</a></li>
+            <li class="nav-links"><a href="./contact.html">Contact</a></li>
           </ul>
         </nav>
         <button class="register-btn btn">
@@ -131,11 +101,19 @@
                  <li><span> Mr J. Khuntia ,</span> PPL , Paradeep</li>
               </ul>
             </div>
-            <button class="register-btn btn">
-              <a href="https://forms.gle/ddaR4nGGhvUWrGuP8" target="_blank"
-                >Register Now</a
-              >
-            </button>
+            <h2 class="section-title" id="about-us-title-id">
+              Local Advisory Committee
+            </h2>
+            <div class="about-us-content committee-content">
+              <ul>
+                <li><span>Prof. P. K. Hota,</span> Dean School of Computer Sciences</li>
+                <li><span>Prof. P. C. Swain,</span> Dean School of Infrastructure & Planning</li>
+                <li><span>Prof. D. Mishra,</span> Dean School of Mechanical Sciences</li>
+                <li><span>Prof. S. Panda,</span> Dean School of Electrical Sciences</li>
+                <li><span>Prof. J. P. Panda,</span> Dean School of HS & Basic Sciences</li>
+              </ul>
+            </div>
+            
           </section>
         </div>
       </div>
@@ -149,13 +127,13 @@
               >Dr. Pankaj Charan Jena (HOD Chemical Engineering)</span
             >
             <span class="footer-contact-phone">91-8249268068</span>
-            <span class="footer-contact-email"> head_chemical@vssut.ac.in</span>
+            <span class="footer-contact-email"><a href="mailto: head_chemical@vssut.ac.in ">head_chemical@vssut.ac.in</a></span>
           </div>
           <div class="footer-section footer-links-section d-flex">
-            <p class="title">About</p>
-            <span class="footer-highlight">About NCCBS</span>
-            <span class="footer-highlight">Important Dates</span>
-            <span class="footer-highlight">Programmes</span>
+            <p class="title">Links</p>
+            <span class="footer-highlight"><a href="./AboutNCCBS.html">About NCCBS</a></span>
+            <span class="footer-highlight"><a href="./Dates.html">Important Dates</a></span>
+            <span class="footer-highlight"><a href="./program.html">Programmes</a></span>
           </div>
           <div class="footer-section footer-sponsors-section">
             <p class="title">Sponsorships and Advertisements</p>

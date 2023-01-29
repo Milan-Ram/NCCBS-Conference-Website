@@ -15,10 +15,6 @@ a {
     color: unset;
 }
 
-/* img {
-    max-width: 100vw;
-} */
-
 body {
     font-size: 42.5%;
     overflow-x: hidden;
@@ -36,6 +32,10 @@ body {
     display: flex;
     align-items: center;
 }
+#red-pointer{
+    color: red;
+    font-size: 1.3rem;
+}
 
 .header-details {
     align-items: flex-start;
@@ -44,7 +44,7 @@ body {
 }
 
 .logo-1 {
-    width: 6rem;
+    width: 5rem;
 }
 
 .logo-1-container {
@@ -53,7 +53,7 @@ body {
 }
 
 .logo-2 {
-    width: 5rem;
+    width: 4rem;
 }
 
 .brand-name {
@@ -104,7 +104,7 @@ body {
     cursor: pointer;
 }
 
-/*-- header  --------------------------------------------- */
+/*=============================================================== header ==================================== */
 .header {
     justify-content: center;
     padding: 0 5rem;
@@ -142,7 +142,7 @@ body {
     margin: 1.5rem;
 }
 
-/*===================================== drop-down menu ==============================  */
+/*=========================================================== drop-down menu ========================  */
 .drop-down-icon {
     font-size: 0.9rem;
 }
@@ -166,6 +166,7 @@ body {
     margin-top: 0.6rem;
     font-size: 1.1rem;
 }
+/*=================================================== header Registeration button =======================  */
 
 .header .register-btn {
     position: absolute;
@@ -177,7 +178,7 @@ body {
     transform: scale(1.01);
 }
 
-/*-- main content -----------------------------------------------------  */
+/*===================================================== main content =======================================  */
 
 main section {
     min-height: 100vh;
@@ -188,7 +189,7 @@ main section {
     overflow-x: hidden;
 }
 
-/*=============================================== image scroll =====================  */
+/*======================================================= image scroll =====================================  */
 .scroll-image {
     object-fit: cover;
 }
@@ -223,11 +224,15 @@ main section {
     right: 0;
 }
 
-/*=============================================== sections ========================= */
+/*=============================================================== sections ============================== */
 .section-title {
     font-size: 1.7rem;
     color: #308474;
     margin: 1rem 0;
+}
+
+section ul li {
+    list-style-type: disc;
 }
 
 .about-us-content, .about-nccbs-content {
@@ -240,14 +245,14 @@ main section {
     margin: 1.4rem 0;
 }
 
-.about-us-section .register-btn, .about-nccbs-content.register-btn {
+section .register-btn {
     background-color: #359381;
     color: #fff;
     margin: 1rem 0;
     border-radius: 0;
     padding: 1rem 2rem;
 }
-
+/*======================================================= upcoming Events ===================================== */
 .upcoming-events-container {
     margin-bottom: 3rem 0;
 }
@@ -288,8 +293,71 @@ main section {
     border-bottom: 2px solid black;
 }
 
-/*============================================ committee ==================  */
-.committee-content .sub-heading{
+.about-nccbs-section {
+    gap: 5rem;
+    align-items: flex-start;
+    padding-top: 3rem;
+}
+.about-nccbs-section  h3{
+    margin: 1.5rem 0;
+}
+
+.about-nccbs-data-container {
+    flex: 3;
+}
+  /*================================================== call for abstract ============================== */
+.boxed-paragraph{
+    border: 1px solid black;
+    padding: 1rem;
+    font-weight: 500;
+    background-color: #359381;
+    color: #fff;
+}
+.dates-section p{
+    line-height: 4rem;
+}
+
+/* ======================================================= side-menu ===============================  */
+.about-section-side-menu {
+    flex: 1;
+    width: fit-content;
+    height: 60vh;
+    background-color: #308474;
+    color: #fff;
+}
+
+.about-section-side-menu h2 {
+    font-size: 1.2rem;
+    margin: 1rem;
+    text-align: center;
+}
+
+.about-section-side-menu ul {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.1rem;
+    padding: 0 1rem;
+}
+
+.about-section-side-menu ul li {
+    width: 90%;
+    padding: 0.3rem 0;
+    margin: 0.4rem;
+    border-bottom: 1px solid #fff;
+    list-style-type: none;
+
+}
+/*===================================================== contact page =================================  */
+.contact-phone{
+    font-weight: 500;
+    margin-left: 1rem;
+}
+.contact-email{
+    font-weight: 500;
+
+}
+/*====================================================== committee ===================================  */
+.committee-content .sub-heading ,.sub-heading{
     color: #499e8e;
     font-size: 1.1rem;
     padding: 0.2rem;
@@ -297,22 +365,54 @@ main section {
     width: fit-content;
     font-weight: 600;
 }
-.committee-content ul{
+
+.committee-content ul {
     margin: 2rem 1rem;
 }
+
 .committee-content ul li {
     list-style-type: disc;
     margin: 0.7rem 0;
     padding: 0.3rem 0;
-    border-bottom: 1px solid #308475a2;
+    border-bottom: 2px dotted #308475a2;
 }
 
 .committee-content li span {
     font-weight: 600;
     font-size: 1.05rem;
 }
+/*===================================================== programme section ================================  */
+.drop-down-section{
+    position: relative;
+ }
+ .programme-drop-btn{
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: #359381;
+    font-weight: 600;
+    font-size: 1.15rem;
+    border-bottom: 1px solid #359381;
+    cursor:text;
+    user-select: none;
+    
+}
+select{
+    cursor: pointer;
+    width: 100%;
+    height: 2rem;
+    padding: 0.2rem;
+    margin: 0.7rem 0;
+}
 
-/*-- footer -----------------------------------------------------------  */
+select option{
+    color: #fff;
+    font-size: 0.95rem;
+    font-weight: 400;
+    background-color: #2b9783cb;
+ }
+
+/*=========================================================Footer ========================================= */
 .footer-wrapper {
     position: absolute;
     left: 0;
@@ -356,7 +456,7 @@ main section {
     font-size: 1.15rem !important;
 }
 
-/*================================================ medai queries =================== */
+/*================================================ medai queries ==================================== */
 @media screen and (min-width:1500px) {
     :root {
         font-size: 1.3rem;
@@ -485,9 +585,11 @@ main section {
     .upcoming-event {
         width: 100%;
     }
-    .committee-content li span{
+
+    .committee-content li span {
         display: block;
     }
+
     .footer-map iframe {
         width: 110%;
     }
@@ -526,7 +628,11 @@ main section {
     main section {
         padding: 1rem 2rem;
     }
+
     .footer-wrapper {
         padding: 3rem 4rem 3rem 2rem;
     }
 }
+
+
+ 
