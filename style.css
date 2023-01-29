@@ -305,6 +305,10 @@ section .register-btn {
 .about-nccbs-data-container {
     flex: 3;
 }
+.programme-section li span{
+    font-weight: 600;
+
+}
   /*================================================== call for abstract ============================== */
 .boxed-paragraph{
     border: 1px solid black;
@@ -381,36 +385,6 @@ section .register-btn {
     font-weight: 600;
     font-size: 1.05rem;
 }
-/*===================================================== programme section ================================  */
-.drop-down-section{
-    position: relative;
- }
- .programme-drop-btn{
-    position: absolute;
-    top: 0;
-    left: 0;
-    color: #359381;
-    font-weight: 600;
-    font-size: 1.15rem;
-    border-bottom: 1px solid #359381;
-    cursor:text;
-    user-select: none;
-    
-}
-select{
-    cursor: pointer;
-    width: 100%;
-    height: 2rem;
-    padding: 0.2rem;
-    margin: 0.7rem 0;
-}
-
-select option{
-    color: #fff;
-    font-size: 0.95rem;
-    font-weight: 400;
-    background-color: #2b9783cb;
- }
 
 /*=========================================================Footer ========================================= */
 .footer-wrapper {
@@ -609,18 +583,21 @@ select option{
         align-items: center;
         gap: 0.5rem;
     }
+    .contact-phone{
+        display: block;
+    }
 
 }
 
 @media screen and (max-width:420px) {
 
     .department-name {
-        font-size: 1.3rem;
+        font-size: 1.4rem;
         font-weight: 700;
         margin-top: 1rem;
     }
 .address{
-    font-size: 1rem;
+    font-size: 1.1rem;
 }
     .mobile-menu-icon {
         position: absolute;
@@ -638,6 +615,9 @@ select option{
 
     .footer-wrapper {
         padding: 3rem 4rem 3rem 2rem;
+    }
+    .programme-section{
+        padding: 0 2rem;
     }
 }
 
