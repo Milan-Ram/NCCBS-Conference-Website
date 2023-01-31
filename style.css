@@ -158,6 +158,8 @@ nav ul li:hover a, nav ul li .active {
     gap: 1rem;
     position: absolute;
     top: 1.5rem;
+    background-color: #d6c8ff;
+    padding: 1rem;
 }
 
 .nav-links:hover .drop-down-menu {
