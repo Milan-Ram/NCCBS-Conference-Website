@@ -75,7 +75,7 @@ ul {
     list-style-type: none !important;
     padding: 0.7rem 2rem;
     border-radius: 50px;
-    font-size: 0.95rem;
+    font-size: 0.9rem;
     text-transform: uppercase;
     cursor: pointer;
     transition: all 0.3s ease;
@@ -171,11 +171,12 @@ ul {
         margin: 0.5rem;
         min-height: calc(100% - 1rem);
     }
+
 }
 
 .lightbox_content {
     box-shadow: var(--box-shadow);
-    max-width: 700px;
+    max-width: 65vw;
     width: 100%;
     border-radius: 10px;
     text-align: center;
@@ -242,6 +243,13 @@ ul {
         gap: 1rem;
         margin: 4rem 1rem;
     }
-    
-    
+    .lightbox_content {
+        max-width: 700px;
+}
+.gallery_tabs li {
+    list-style-type: none !important;
+    padding: 0.7rem 2rem;
+    border-radius: 50px;
+    font-size: 0.9rem;
+}
 }
